@@ -40,7 +40,7 @@ int store_number(unsigned int * data)
 
 mình nhận ra rằng chổ lưu dữ liệu của mình có thể bị lỗi, vì không kiểm tra điều kiện. Và mảng data chỉ khai báo có 100 phần tử. Nhưng có nó thể lưu các dữ liệu ở những nơi mà không phải dành cho mảng data.
 Vậy mình sẽ dùng shellcode để spawn shell gồm 23 ký tự.
-### Nhưng một điều nữa đó là lệnh if không cho phép chúng ta ghi đè shellcode 1 cách liên tiếp.
+### Nhưng một điều nữa đó là lệnh if trong hàm store_number trên không cho phép chúng ta ghi đè shellcode 1 cách liên tiếp.
 
 
 # solution
